@@ -19,10 +19,12 @@ app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 mail = Mail(app)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:@localhost/flask_app'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:@localhost/flask_app' #add database here
 db = SQLAlchemy(app)
 
-admin_email = "admin@gmail.com"
+#admin username and password
+
+admin_email = "admin@gmail.com" 
 admin_pass = "123"
 
 
