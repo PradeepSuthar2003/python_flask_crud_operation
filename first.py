@@ -10,11 +10,11 @@ from datetime import datetime
 
 
 app = Flask(__name__)
-app.secret_key = "pog-pks"
+app.secret_key = "key"
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
-app.config['MAIL_USERNAME'] = 'pradeepsuthar4309@gmail.com'
-app.config['MAIL_PASSWORD'] = 'jlwajfraujhfimpp'
+app.config['MAIL_USERNAME'] = 'your-email'
+app.config['MAIL_PASSWORD'] = 'your-pass-key'
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 mail = Mail(app)
@@ -63,7 +63,7 @@ def contact():
 
         msg = Message(
             tittle,
-            sender='pradeepsuthar4309@gmail.com',
+            sender='sender-email',
             recipients=[email]
         )
         msg.body = desc
