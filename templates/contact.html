@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+<form method="POST">
+    <div class="container mt-5">
+        <div class="mb-3">
+            <label for="txt_email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="txt_email" name="txt_email" placeholder="name@example.com"
+                required>
+        </div>
+        <div class="mb-3">
+            <label for="txt_tittle" class="form-label">Tittle</label>
+            <input type="text" class="form-control" id="txt_tittle" name="txt_tittle" placeholder="blog" required>
+        </div>
+        <div class="mb-3">
+            <label for="txt_desc" class="form-label">Description</label>
+            <textarea class="form-control" id="txt_desc" rows="3" name="txt_desc"></textarea>
+        </div>
+        <div class="mb-3">
+            <button class="btn btn-outline-dark" type="submit">Login</button>
+        </div>
+    </div>
+</form>
+
+{% endblock body %}
