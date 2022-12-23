@@ -10,7 +10,7 @@ from datetime import datetime
 
 
 app = Flask(__name__)
-app.secret_key = "pog-pks"
+app.secret_key = "key"
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
 app.config['MAIL_USERNAME'] = 'your-email'
